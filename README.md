@@ -113,8 +113,7 @@ port_location. The tables can be joined to each other using the
 port_code (also named as iata_code in some tables), and city columns.
 
 ![Diagram Description automatically
-generated](./media/image2.png){width="4.444444444444445in"
-height="5.291666666666667in"}
+generated](./media/image2.png)
 
 Refer to `data_dictionary.md` for data_dictionary.
 **2** ERD
@@ -192,8 +191,7 @@ monthly. As a result, it is recommended the data is updated monthly.
     population also tend to have high number of tourists.
 
     ![Chart, line chart, histogram Description automatically
-    generated](./media/image3.png){width="5.208333333333333in"
-    height="3.4722222222222223in"}
+    generated](./media/image3.png)
 
     ```
     with demo as (
@@ -230,8 +228,7 @@ monthly. As a result, it is recommended the data is updated monthly.
     Topmost visited cities in 2016.
 
     ![Chart, bar chart Description automatically
-    generated](./media/image4.png){width="4.861111111111111in"
-    height="3.4722222222222223in"}
+    generated](./media/image4.png)
 
     ```
     select 
@@ -249,8 +246,7 @@ monthly. As a result, it is recommended the data is updated monthly.
     Top 5 business travel destinations in the U.S in 2016
 
     ![Chart, bar chart Description automatically
-    generated](./media/image5.png){width="4.861111111111111in"
-    height="3.4722222222222223in"}
+    generated](./media/image5.png)
 
     ```
     select 
