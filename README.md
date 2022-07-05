@@ -64,8 +64,7 @@ Step 3 is to load the data to Amazon Redshift:
 **Diagram of the architecture.**
 
 ![Diagram Description automatically
-generated](./media/image1.jpg){width="6.268055555555556in"
-height="4.45in"}
+generated](./media/image1.jpg)
 
 1 Solution Architecture
 
