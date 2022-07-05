@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import os
 
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import udf, col, monotonically_increasing_id
+from pyspark.sql.functions import udf, col, monotonically_increasing_id, initcap
 from pyspark.sql.types import DateType, IntegerType
 
 
@@ -66,8 +66,10 @@ def process_port_locations(spark, input_data, output_data):
 
     # read port locations file
     df_port_location = spark.read.format("csv").option("header","true").load(port_locations)
-    df_port_location = df_port_location.select('port_code','port_city', 'port_state')
-
+    
+    # select columns and convert port city to a title case
+    df_port_location = df_port_location.select('port_code', initcap('port_city').alias("port_city"), 'port_state')
+        
     df_port_location.show() # print statement for debugging
 
     df_port_location.write.mode("overwrite").parquet(os.path.join(output_data, 'port_locations'))
